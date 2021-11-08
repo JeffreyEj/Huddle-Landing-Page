@@ -1,0 +1,518 @@
+/* === REQUIREMENTS === */
+
+/* COLORS */
+
+/* ### Primary
+
+- Pink: hsl(322, 100%, 66%)
+
+### Neutral
+
+- Very Pale Cyan: hsl(193, 100%, 96%)
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Grayish Blue: hsl(208, 11%, 55%) */
+
+/* ### Headings 
+
+font-family: 'Poppins', sans-serif;
+
+*/ 
+
+/* ### Body, Call-to-actions 
+- Weights: 400, 700
+font-family: 'Open Sans', sans-serif;
+
+
+*/
+
+/* ## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/) */
+
+
+/* === GENERAL === */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body {
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* === Navbar === */
+
+#navbar-section {
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-color: hsl(193, 100%, 96%);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50rem;
+    position: relative;
+    bottom: 1rem;
+  
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    align-self: flex-end;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    position: relative;
+    top: 4rem;
+}
+
+
+#header-container button {
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-right: 7rem;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    float: right;
+}
+
+#header-container button:hover {
+    opacity: 0.8;
+}
+
+#header-text {
+    position: relative;
+    left: 3rem;
+    bottom: .3rem;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+}
+
+/* === SLOGAN === */
+
+#slogan-container {
+    display: flex;
+    margin-left: 5rem;
+    margin-top: 14rem;
+    flex-direction: row;
+    position: relative;
+    left: 13rem;
+    max-width: 70%;
+}
+@media (max-width: 1332px) {
+    #slogan-container {
+        max-width: 60%;
+    }
+}
+
+#slogan-text > h1 {
+    color: hsl(192, 100%, 9%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+#slogan-text button {
+    margin-top: 1rem;
+    border-radius: 2rem;
+    padding-right: 10rem;
+    padding-top: 2rem;
+    background-color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#slogan-text button:hover {
+    opacity: 0.8;
+}
+
+#slogan-text span {
+    color: #FFF;
+    font-size: 1rem;
+    position: relative;
+    bottom: 1rem;
+    left: 5rem;
+}
+
+/* === Slogan - Image ===*/
+
+#image-container {
+    position: relative;
+    bottom: 6rem;
+    left: 7rem;
+}
+
+#image-container img {
+    width: 80%;
+    height: auto;
+}
+
+/* === grow-togehter === */
+
+#grow-together {
+    margin-right: 4rem;
+    margin-left: 4rem;
+    margin-top: 8rem;
+    display: grid;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 2rem;
+    margin-bottom: 15rem;
+}
+
+#grow-container {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background-color: #FFF;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+#grow-text {
+    position: relative;
+    left: 13%;
+    top: 25%;
+    display: inline-block;
+}
+
+
+#grow-text > h1 {
+    color: hsl(192, 100%, 9%);
+}
+
+#grow-img {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 35%;
+    right: 10%;
+}
+
+#grow-img > img {
+    width: 25rem;
+    height: auto;
+    grid-column-start: 1;
+}
+
+
+
+@media (max-width: 1292px) {
+
+    #grow-container {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 6;
+        row-gap: none;
+    }
+
+    #grow-text {
+        position: relative;
+        left: 5%;
+        top: 55%;
+        display: inline-block;
+    }
+
+    #grow-img {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 22%;
+        right: 6%;
+        max-width: 100vh;
+    }
+
+    #flowing-container {
+        visibility: hidden;
+    }
+    
+}
+
+
+
+/* === flowing conversation === */
+
+#flowing-container {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background-color: #FFF;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+
+#flowing-text {
+    position: relative;
+    left: 23%;
+    top: 25%;
+    display: inline-block;
+}
+
+#flowing-text > h1 {
+    color: hsl(192, 100%, 9%);
+    display: inline-block;
+}
+
+#flowing-img {
+    display: flex;
+    justify-content: flex-end;
+    float: left;
+    position: relative;
+    left: 10%;
+    top: 15%;
+    
+}
+
+#flowing-img > img {
+    width: 25rem;
+    height: auto;
+    grid-column-start: 1;
+}
+
+
+/* === Your Users === */
+
+
+#users-container {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background-color: #FFF;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+#users-text {
+    position: relative;
+    left: 13%;
+    top: 25%;
+    display: inline-block;
+}
+
+#users-text > h1 {
+    color: hsl(192, 100%, 9%);
+}
+
+#users-img {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 35%;
+    right: 10%;
+}
+
+#users-img > img {
+    width: 25rem;
+    height: auto;
+    grid-column-start: 1;
+}
+
+
+/* ==== Community Card / Footer === */
+
+#community-card {
+    display: grid;
+    grid-template-rows: 300px 300px 300px 200px;
+    grid-template-columns: .6fr .2fr .6fr .6fr .6fr .6fr;
+}
+
+
+#community-container {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: #FFF;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    position: relative;
+    left: 7rem;
+    top: 8rem;
+    
+}
+
+
+
+#community-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+#community-button {
+    border-radius: 2rem;
+    border: 1px solid hsl(322, 100%, 66%);
+    background-color: hsl(322, 100%, 66%);
+    position: relative;
+    left: 32%;
+    color:hsl(192, 100%, 9%);
+    padding-top: 2rem;
+    padding-right: 5rem;
+}
+
+#community-button:hover {
+    opacity: .8;
+}
+
+#community-button span {
+    color: #FFF;
+    position: relative;
+    font-size: 1.5rem;
+    bottom: 1rem;
+    left: 1.7rem;
+}
+
+/* === Footer === */
+
+
+
+#huddle-footer {
+    background-color: hsl(192, 100%, 9%);
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-end: 5;
+}
+
+#contact-details {
+    display: flex;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    flex-direction: column;
+    color: #FFF;
+}
+
+#contact-details h1 {
+    color: #FFF;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#location-image {
+    position: relative;
+    left: 4rem;
+    top: 3rem;
+}
+
+#contact-details p {
+    padding-left: 6rem;
+}
+
+/* === 2 === */
+
+#contact-details-2{
+    display: flex;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    flex-direction: column;
+    color: #FFF;
+}
+
+#contact-details-2 span {
+    text-align: center;
+    position: relative;
+    top: 8rem;
+    line-height: 3rem;
+}
+
+#contact-details-2 span:hover {
+    text-decoration: underline;
+}
+
+/* === 3 === */
+
+#contact-details-3{
+    display: flex;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    flex-direction: column;
+    color: #FFF;
+}
+
+#contact-details-3 span {
+    text-align: center;
+    position: relative;
+    top: 8rem;
+    line-height: 3rem;
+}
+
+#contact-details-3 span:hover {
+    text-decoration: underline;
+}
+
+/* === 4 === */
+
+#contact-details-4{
+    display: flex;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    flex-direction: row;
+    color: #FFF;
+    height: 3rem;
+    width: auto;
+}
+
+#contact-details-4 img {
+    text-align: center;
+    position: relative;
+    top: 8rem;
+    line-height: 3rem;
+    display: block;
+    margin-right: 1rem;
+    background-color: #FFF;
+    border-radius: 2rem;
+}
+
+#contact-details-4 img:hover {
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 2rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
