@@ -852,27 +852,27 @@ body {
         margin-left: 18rem;
     }
     #grow-container, #flowing-text, #users-text {
-        margin-right: 6rem;
-        margin-left: 6rem;
+        margin-right: 12rem;
+        margin-left: 12rem;
         display: flex;
         align-items: flex-end;
     }
 
     #grow-container img {
-        width: 18rem;
+        width: 22rem;
         height: auto;
         position: relative;
-        top: 10rem;
-        right: 6rem;
+        top: 5rem;
+        right: 10rem;
     }
     
     #grow-container h1 {
         position: relative;
         margin: 0;
-        top: -1rem;
-        right: 62rem;
+        top: -6rem;
+        right: 72rem;
         margin-bottom: 1rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: hsl(192, 100%, 9%);
 
     }
@@ -890,25 +890,25 @@ body {
     #grow-text-2 {
         visibility: visible;
         position: relative;
-        right: 43rem;
-        bottom: 5rem;
+        right: 58rem;
+        bottom: 8rem;
     }
     
     #flowing-text img {
-        width: 20rem;
+        width: 22rem;
         height: auto;
         position: relative;
-        top: 10rem;
-        right: 52rem;
+        top: 7rem;
+        right: 62rem;
     }
     
     #flowing-text h1 {
         position: relative;
         margin: 0;
-        top: -1rem;
-        right: 19rem;
+        top: -4rem;
+        right: 14rem;
         margin-bottom: 1rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: hsl(192, 100%, 9%);
     }
     
@@ -919,8 +919,8 @@ body {
     #flowing-text-2 {
         visibility: visible;
         position: relative;
-        right: 5rem;
-        bottom: 4rem;
+        right: 5.5rem;
+        bottom: 6rem;
     }
 
     #users-text {
@@ -935,20 +935,20 @@ body {
     }
     
     #users-text img {
-        width: 18rem;
+        width: 22rem;
         height: auto;
         position: relative;
-        top: 10rem;
+        top: 8rem;
         left: 22rem;
     }
     
     #users-text h1 {
         position: relative;
         margin: 0;
-        top: -1rem;
-        right: 27rem;
+        top: -4rem;
+        right: 37rem;
         margin-bottom: 1rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: hsl(192, 100%, 9%);
 
     }
@@ -960,8 +960,8 @@ body {
     #users-text-2 {
         visibility: visible;
         position: relative;
-        right: 16rem;
-        bottom: 5rem;
+        right: 27.5rem;
+        bottom: 7rem;
     }
 
     #community-card-grid {
@@ -973,8 +973,8 @@ body {
     }
     
     #community-card {
-        margin-left: 30rem;
-        margin-right: 30rem;
+        margin-left: 40rem;
+        margin-right: 40rem;
 
     }
 
